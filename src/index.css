@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: Calistoga;
+    src: url("assets/fonts/Calistoga/Calistoga-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: Archivo;
+    src: url("assets/fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: Nunito;
+    src: url("assets/fonts/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
+  }
+  .scrl-snap{
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+
+    scroll-behavior: smooth;
+
+}
+  
+.scrl-snap-child{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+  
+  /* hero  */
+
+  .nav-bar {
+    @apply fixed top-0 flex lg:flex-row-reverse z-40 h-[15vh] w-full  text-white justify-between lg:items-end sm:pr-24 pr-8 sm:pl-10 pl-2;
+  }
+
+
+  /* page1 */
+
+
+
+.page-1{
+    @apply  md:h-screen h-auto w-[100%] relative bg-[#f6eedf] pt-[15vh] pb-[10vh] flex flex-col justify-between items-center text-[#f64b3c] 
+}
+
+.page-1-title{
+    @apply lg:text-[9.2vh] text-[5vh] font-bold font-secondary
+
+}
+.page-1-text{
+    @apply lg:text-[2.8vh] text-[2vh] w-6/12 text-center
+}
+.chefs{
+    @apply flex md:flex-row flex-col gap-6 lg:gap-0 flex-wrap justify-around xl:mx-24 xl:mt-10 md:mx-16 mx-6 md:w-11/12
+}
+.chef{
+    @apply  flex  w-[10vh] min-[300px]:w-[17vh] min-[510px]:w-[20vh] md:w-[20vh]  flex-col lg:w-[35vh] items-center text-center
+}
+.chef-img{
+    @apply w-full aspect-square rounded-full  overflow-hidden
+}
+
+
+/* page 2 */
+
+.page-2{
+  @apply  md:h-screen h-auto w-[100%] relative bg-[#f64b3c] pt-[15vh] pb-[10vh] flex  justify-between items-center font-secondary content-center text-white 
+}
+
+/* page-3 */
+
+.page-3{
+  @apply  md:h-screen h-auto w-[100%] relative bg-[#f6eedf] pt-[15vh] pb-[10vh] flex  justify-between items-center font-secondary content-center text-[#f64b3c] 
+
+}
+
+/* page 4 */
+
+.page-4{
+  @apply  md:h-screen h-auto w-[100%] relative bg-[#f64b3c] pt-[15vh] pb-[10vh] flex  justify-center items-center font-secondary overflow-hidden content-center text-center text-white 
+
+}
+.statistic{
+  @apply aspect-square border-4 border-white rounded-full lg:w-[39vh] md:w-[18vh] w-[14vh] flex flex-col items-center justify-center
+}
+.statistic-number{
+  @apply lg:text-[12.8vh] md:text-[7vh] text-[3vh] font-bold md:leading-[110px]
+}
+.statistic-name{
+  @apply lg:text-[4.4vh] md:text-[2vh] text-[1.5vh] font-bold
+}
+
+/* page 5 */
+
+.page-5{
+  @apply  md:h-screen h-auto w-[100%] relative bg-[#f6eedf] pt-[15vh] pb-[10vh] flex overflow-hidden justify-center items-start font-secondary content-center text-[#f64b3c] 
+
+}
+.package{
+  @apply lg:w-[46vh]  md:w-[27vh] md:mx-0 md:h-auto h-auto w-[50vw]  lg:py-[4vh] py-[1.5vh] md:py-[1.8vh] my-[1vh] px-[2vw] lg:gap-[1.8vh] md:gap-[1vh] gap-[0.6vh] bg-white flex flex-col items-center text-center rounded-xl 
+}
+/* .package{
+  @apply lg:w-[46vh]  md:w-[27vh] md:mx-0 w-[38vw]  lg:py-[4vh] py-[2vh] md:py-[1.8vh] my-[1vh] px-[1vw] lg:gap-[1.8vh] md:gap-[1vh] gap-[0.6vh] bg-white flex flex-col items-center text-center rounded-xl 
+} */
+.package-title{
+  @apply md:text-[2.8vh] lg:text-[4.8vh] text-[2.1vh] uppercase font-semibold 
+}
+/* .package-title{
+  @apply md:text-[2.8vh] lg:text-[4.8vh] text-[2.4vh] uppercase font-semibold 
+} */
+.package-img{
+  @apply lg:w-[14vh] md:w-[9vh] w-[5vh]
+}
+/* .package-img{
+  @apply lg:w-[14vh] md:w-[9vh] w-[8vh]
+} */
+.package-price{
+  @apply font-bold tracking-tighter text-[2vh] md:text-[2vh] lg:text-[4vh]
+}
+/* .package-price{
+  @apply font-bold tracking-tighter text-[2.2vh] md:text-[2vh] lg:text-[4vh]
+} */
+.package-des{
+  @apply md:text-[1.6vh] lg:text-[3vh] text-[1.5vh] font-nunito leading-tight  pb-[0.6vh]
+}
+/* .package-des{
+  @apply md:text-[1.6vh] lg:text-[3vh] text-[1.7vh] font-nunito leading-tight 
+} */
+.package-button{
+  @apply md:px-[21%] px-[15%] lg:py-[2vh] md:py-[0.8vh] py-[0.6vh] md:text-[1.9vh] lg:text-[3.1vh] text-[1.3vh] uppercase font-bold bg-[#f64b3c] text-white rounded-full
+}
+/* .package-button{
+  @apply md:px-[24%] px-[15%] lg:py-[2vh] md:py-[0.8vh] py-[0.8vh] md:text-[1.9vh] lg:text-[3.3vh] text-[1.6vh] uppercase font-bold bg-[#f64b3c] text-white rounded-full
+} */
+
+/* page 6 */
+
+.page-6{
+  @apply  md:h-screen h-auto object-cover bg-bottom bg-cover w-[100%]  bg-no-repeat relative pt-[15vh] pb-[10vh] flex flex-col text-center overflow-hidden justify-center gap-[7vh] bg-opacity-50 items-center font-secondary content-center text-white 
+}
+
+/* page 7 */
+
+.page-7{
+  @apply  md:h-screen h-auto  w-[100%] relative bg-[#f6eedf] pt-[15vh] pb-[10vh] flex overflow-hidden justify-center items-center font-secondary content-center text-[#f64b3c] 
+
+}
+
+/* footer */
+
+.footer{
+  @apply   w-[100%] relative bg-[#222222] lg:py-[20vh] py-[11vh]  flex overflow-hidden justify-center items-center font-secondary content-center text-white 
+
+}
